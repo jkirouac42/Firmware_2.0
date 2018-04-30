@@ -41,7 +41,25 @@
             }
             else answer = false;
       } 
-        
+//Select Z motor
+
+function zedMotor(){
+    
+    document.getElementById("zMotor").style.display="block";
+}
+
+
+//Select power supply
+
+function pSupply(){
+
+    document.getElementById("zmotor").style.display="none";
+    document.getElementById("psupply").style.display="block";
+}
+
+
+
+//variables for matchconfig()        
                  
          //24v Black Z motor (Rev c and D)
             //V4 (single)section:

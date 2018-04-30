@@ -95,19 +95,17 @@
         <div>
             <h3 class="col-md-12 greet"><strong>Not sure which firmware is correct?</strong></h3>
         </div>
-        <div> 
-            <h3 class="greet2"><strong>Try our Custom Firmware Selector</strong></h3>
+        <div onclick="zedMotor()"> 
+          <a href="#zMotor"> <h3 class="greet2" ><strong>Click Here to Try our Custom Firmware Selector</strong></h3></a> 
         </div>
         
         
   <!--Select Z motor-->      
-        <div id="Zmotor" class="selector">
+        <div id="zMotor" class="selector" style="display: none;">
               <div class="container">
                 <div class="row column">
                       <div class="col-md-12">       
-
-
-                      <h3><strong>Select your Z-motor</strong></h3>
+                          <h3><strong>Select your Z-motor</strong></h3>
                           <br>
                            <div >
                                <img class="pics2 zoom2" src="z_motor_comparison.jpg" alt="z_motor" data-zoom-image="z_motor_comparison.jpg">
@@ -121,7 +119,7 @@
                   </div>
                   <div class="row tutorial">
                       <div class="col-md-12">
-                            <button>Next</button>
+                            <button onclick="pSupply">Next</button>
                       </div>
                   </div>
             </div>
@@ -130,7 +128,7 @@
                           
 
 <!--Select Power supply-->
-            <div id="Psupply" class="selector" style="display: none;">
+            <div id="psupply" class="selector" style="display: none;">
               <div class="container">
                 <div class="row column">
                       <div class="col-md-12">  
@@ -154,7 +152,7 @@
                         <button>Back</button>
                       </div>
                       <div class="col-md=6">
-                        <button>Next</button>
+                        <button onclick="">Next</button>
                       </div>
                   </div>
                </div>
@@ -256,7 +254,8 @@
         
          
         
- <!--Select custom configuration-->  
+ <!--Select custom configuration--> 
+    <div style="display: none;">    
          <div class="greet">
                  <h3><strong>Submit Your Printer's Configuration</strong></h3>
         </div>
@@ -281,6 +280,8 @@
                  </div>
              </div>
          </div>
+        </div>
+        <div class="foot"></div>
 
     </body>
     
@@ -291,6 +292,6 @@
 <!--Import elevate-zoom-->  
         <script src="elevatezoom-master/jquery.elevatezoom.js"></script>
 <!--Import firmware.js-->  
-        <script src="testfirmware.js" ></script>
+        <script type="application/javascript" src="testfirmware.js" ></script>
     
 </html>
