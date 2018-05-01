@@ -43,18 +43,26 @@
       } 
 //Select Z motor
 
-function zedMotor(){
+function step1(){
     
     document.getElementById("zMotor").style.display="block";
+
+  
 }
 
 
 //Select power supply
 
-function pSupply(){
+function step2(){
+    
+   document.getElementById("zMotor").style.display="none";
+   document.getElementById("psupply").style.display="block";
+}
 
-    document.getElementById("zmotor").style.display="none";
-    document.getElementById("psupply").style.display="block";
+function step2back(){
+    
+    document.getElementById("zMotor").style.display="block";
+    document.getElementById("psupply").style.display="none";
 }
 
 
