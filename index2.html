@@ -100,7 +100,7 @@
         </div>
         
         
-  <!--Select Z motor-->      
+  <!--Step 1-->      
         <div id="zMotor" class="selector" style="display: none;">
               <div class="container">
                 <div class="row column">
@@ -127,7 +127,7 @@
 
                           
 
-<!--Select Power supply-->
+<!--Step 2-->
             <div id="psupply" class="selector" style="display: none;">
               <div class="container">
                 <div class="row column">
@@ -149,18 +149,18 @@
                  </div>
                   <div class="row tutorial">
                       <div class="col-md-6">
-                        <button onclick="step2back()">Back</button>
+                        <button onclick="step2b()">Back</button>
                       </div>
                       <div class="col-md-6">
-                        <button onclick="">Next</button>
+                        <button onclick="step3()">Next</button>
                       </div>
                   </div>
                </div>
             </div>
                     
         
-<!--Select z endstop position-->  
-            <div id="Zendstop" class="selector" style="display: none;">
+<!--Step 3-->  
+            <div id="zEndstop" class="selector" style="display: none;">
               <div class="container">
                 <div class="row column">
                  <div class="col-md-12"> 
@@ -181,18 +181,18 @@
              </div>
                  <div class="row tutorial">
                       <div class="col-md-6">
-                        <button>Back</button>
+                        <button onclick="step3b()">Back</button>
                       </div>
-                      <div class="col-md=6">
-                        <button>Next</button>
+                      <div class="col-md-6">
+                        <button onclick="step4()">Next</button>
                       </div>
                   </div>
             </div>     
            </div>           
 
         
-<!--Select hotend -->
-             <div id="Hotend" class="selector" style="display: none;">
+<!--Step 4 -->
+             <div id="hotend" class="selector" style="display: none;">
               <div class="container">
                 <div class="row column">
                  <div class="col-md-12"> 
@@ -211,17 +211,17 @@
              </div>
                  <div class="row tutorial">
                       <div class="col-md-6">
-                        <button>Back</button>
+                        <button onclick="step4b()">Back</button>
                       </div>
-                      <div class="col-md=6">
-                        <button>Next</button>
+                      <div class="col-md-6">
+                        <button onclick="step5()">Next</button>
                       </div>                  
                   </div>
              </div>
         </div>
     
         
-<!--Select LCD-->        
+<!--Step 5-->        
              <div id="LCD" class="selector" style="display: none;">
               <div class="container">
                 <div class="row column">
@@ -243,10 +243,10 @@
                </div>
                  <div class="row tutorial">
                       <div class="col-md-6">
-                        <button>Back</button>
+                        <button onclick="step5b()">Back</button>
                       </div>
-                      <div class="col-md=6">
-                        <button>Next</button>
+                      <div class="col-md-6">
+                        <button onclick="matchConfig()">Next</button>
                       </div>                  
                 </div>
             </div>

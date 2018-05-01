@@ -59,12 +59,51 @@ function step2(){
    document.getElementById("psupply").style.display="block";
 }
 
-function step2back(){
+function step2b(){
     
     document.getElementById("zMotor").style.display="block";
     document.getElementById("psupply").style.display="none";
 }
 
+function step3(){
+    
+    document.getElementById("zEndstop").style.display="block";
+    document.getElementById("psupply").style.display="none";
+}
+
+function step3b(){
+    document.getElementById("psupply").style.display="block";
+    document.getElementById("zEndstop").style.display="none";
+    
+}
+
+function step4(){
+    
+        document.getElementById("hotend").style.display="block";
+        document.getElementById("zEndstop").style.display="none";
+       
+}
+
+function step4b(){
+    
+    document.getElementById("zEndstop").style.display="block";
+    document.getElementById("hotend").style.display="none";   
+    
+}
+
+function step5(){
+    
+    document.getElementById("LCD").style.display="block";
+    document.getElementById("hotend").style.display="none";
+        
+}
+
+function step5b(){
+    
+    document.getElementById("LCD").style.display="none";
+    document.getElementById("hotend").style.display="block";    
+    
+}
 
 
 //variables for matchconfig()        
