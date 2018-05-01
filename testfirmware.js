@@ -46,8 +46,7 @@
 function step1(){
     
     document.getElementById("zMotor").style.display="block";
-
-  
+ 
 }
 
 
@@ -55,31 +54,31 @@ function step1(){
 
 function step2(){
     
-   document.getElementById("zMotor").style.display="none";
-   document.getElementById("psupply").style.display="block";
+    document.getElementById("zMotor").style.display="none";
+    document.getElementById("pSupply").style.display="block";
 }
 
 function step2b(){
     
     document.getElementById("zMotor").style.display="block";
-    document.getElementById("psupply").style.display="none";
+    document.getElementById("pSupply").style.display="none";
 }
 
 function step3(){
     
     document.getElementById("zEndstop").style.display="block";
-    document.getElementById("psupply").style.display="none";
+    document.getElementById("pSupply").style.display="none";
 }
 
 function step3b(){
-    document.getElementById("psupply").style.display="block";
+    document.getElementById("pSupply").style.display="block";
     document.getElementById("zEndstop").style.display="none";
     
 }
 
 function step4(){
     
-        document.getElementById("hotend").style.display="block";
+        document.getElementById("Hotend").style.display="block";
         document.getElementById("zEndstop").style.display="none";
        
 }
@@ -87,21 +86,21 @@ function step4(){
 function step4b(){
     
     document.getElementById("zEndstop").style.display="block";
-    document.getElementById("hotend").style.display="none";   
+    document.getElementById("Hotend").style.display="none";   
     
 }
 
 function step5(){
     
     document.getElementById("LCD").style.display="block";
-    document.getElementById("hotend").style.display="none";
-        
+    document.getElementById("Hotend").style.display="none";
+      
 }
 
 function step5b(){
     
     document.getElementById("LCD").style.display="none";
-    document.getElementById("hotend").style.display="block";    
+    document.getElementById("Hotend").style.display="block";
     
 }
 
@@ -168,7 +167,7 @@ function step5b(){
     
 //gets user input from selector         
      function matchConfig(){
-
+           
 
                 var zmotor = document.getElementById("z_motor");
                 var s1 = parseInt(zmotor.selectedIndex);
@@ -184,6 +183,9 @@ function step5b(){
               
                 var lcd = document.getElementById("lcd");
                 var s5= parseInt(lcd.selectedIndex);
+         
+         console.log(s4);
+        
           
 //result of user selection compiles here :
                 var userConfig = [s1,s2, s3, s4, s5];
@@ -542,7 +544,7 @@ function step5b(){
             else answer = false;
             }
          
-          else alert("Your printer configuration appears to be non-standard. Please contact support@makergear.com")
+          else alert("Your printer configuration appears to be non-standard. Please contact support@makergear.com") 
          
         }
 
@@ -551,6 +553,6 @@ function step5b(){
 $(".zoom1").elevateZoom({zoomWindowPosition: 10});
 $(".zoom2").elevateZoom({zoomWindowPosition: 2});
 
-    
+
      
                 
