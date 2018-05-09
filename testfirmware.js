@@ -41,16 +41,78 @@
             }
             else answer = false;
       } 
+
+//shows and hides selector divs
+
+function step1(){
+    
+    document.getElementById("1").style.display="block";
+    
+}
+
+
+    var step = 1;  
+
+
+function move(direction){
+    
+    if (direction == undefined){
+        
+        console.log("move function called without direction returning")
+        return
+    }
+    
+   else if (direction == "forward"){
+       
+         
+         if (step >= 5){
+            return
+        }
+            else{ step = step + 1;
+        
+        }       
+       
+        document.getElementById(step).style.display="block";
+        document.getElementById(step - 1).style.display="none";      
+       
+        next();
+    }
+    
+    else{
+        
+        console.log(step)
+        
+
+        if (step <= 1){
+            return
+        }
+        else { (step = step - 1);
+
+        }
+            document.getElementById(step).style.display="block";
+            document.getElementById(step + 1).style.display="none";
+    }   
+} 
+
+
+
+
+
+
+
 //Select Z motor
 
 function step1(){
     
-    document.getElementById("zMotor").style.display="block";
+    document.getElementById("1").style.display="block";
+    window.scrollTo(0, document.body.scrollHeight);
  
 }
-
+/*
 
 //Select power supply
+
+
 
 function step2(){
     
@@ -104,7 +166,7 @@ function step5b(){
     
 }
 
-
+*/
 //variables for matchconfig()        
                  
          //24v Black Z motor (Rev c and D)

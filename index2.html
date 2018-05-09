@@ -96,12 +96,12 @@
             <h3 class="col-md-12 greet"><strong>Not sure which firmware is correct?</strong></h3>
         </div>
         <div onclick="step1()"> 
-          <a href="#zMotor"> <h3 class="greet2" ><strong>Click Here to Try our Custom Firmware Selector</strong></h3></a> 
+          <a href="#1"> <h3 class="greet2" ><strong>Click Here to Try our Custom Firmware Selector</strong></h3></a> 
         </div>
         
         
   <!--Step 1-->      
-        <div id="zMotor" class="selector" style="display: none;">
+        <div id="1" class="selector" style="display: none;">
               <div class="container">
                 <div class="row column">
                       <div class="col-md-12">  
@@ -121,7 +121,7 @@
                   </div>
                   <div class="row tutorial">
                       <div class="col-md-12">
-                            <button onclick="step2()">Next</button>
+                            <button onclick="move('forward')">Next</button>
                       </div>
                   </div>
             </div>
@@ -130,7 +130,7 @@
                           
 
 <!--Step 2-->
-            <div id="pSupply" class="selector" style="display: none;">
+            <div id="2" class="selector" style="display: none;">
               <div class="container">
                 <div class="row column">
                       <div class="col-md-12">  
@@ -151,10 +151,10 @@
                  </div>
                   <div class="row tutorial">
                       <div class="col-md-6">
-                        <button onclick="step2b()">Back</button>
+                        <button onclick="move('backward')">Back</button>
                       </div>
                       <div class="col-md-6">
-                        <button onclick="step3()">Next</button>
+                        <button onclick="move('forward')">Next</button>
                       </div>
                   </div>
                </div>
@@ -162,7 +162,7 @@
                     
         
 <!--Step 3-->  
-            <div id="zEndstop" class="selector" style="display: none;">
+            <div id="3" class="selector" style="display: none;">
               <div class="container">
                 <div class="row column">
                  <div class="col-md-12"> 
@@ -184,10 +184,10 @@
              </div>
                  <div class="row tutorial">
                       <div class="col-md-6">
-                        <button onclick="step3b()">Back</button>
+                        <button onclick="move('backward')">Back</button>
                       </div>
                       <div class="col-md-6">
-                        <button onclick="step4()">Next</button>
+                        <button onclick="move('forward')">Next</button>
                       </div>
                   </div>
             </div>     
@@ -195,7 +195,7 @@
 
         
 <!--Step 4 -->
-             <div id="Hotend" class="selector" style="display: none;">
+             <div id="4" class="selector" style="display: none;">
               <div class="container">
                 <div class="row column">
                  <div class="col-md-12"> 
@@ -217,10 +217,10 @@
              </div>
                  <div class="row tutorial">
                       <div class="col-md-6">
-                        <button onclick="step4b()">Back</button>
+                        <button onclick="move('backward')">Back</button>
                       </div>
                       <div class="col-md-6">
-                        <button onclick="step5()">Next</button>
+                        <button onclick="move('forward')">Next</button>
                       </div>                  
                   </div>
              </div>
@@ -228,7 +228,7 @@
     
         
 <!--Step 5-->        
-             <div id="LCD" class="selector" style="display: none;">
+             <div id="5" class="selector" style="display: none;">
               <div class="container">
                 <div class="row column">
                  <div class="col-md-12"> 
@@ -252,10 +252,10 @@
                </div>
                  <div class="row tutorial">
                       <div class="col-md-6">
-                        <button onclick="step5b()">Back</button>
+                        <button onclick="move('backward')">Back</button>
                       </div>
                       <div class="col-md-6">
-                        <button onclick="matchConfig()">Next</button>
+                        <button onclick="move('forward')">Next</button>
                       </div>                  
                 </div>
             </div>
