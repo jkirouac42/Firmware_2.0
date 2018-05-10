@@ -32,12 +32,6 @@ pre{
     font-family: 'Oswald', sans-serif;
     text-align: center;}
 
-.z_pic{
-    display: block;
-    margin: auto;
-     height:140px; 
-     width:340px;
-}
 
 
 .logo{
@@ -72,17 +66,7 @@ pre{
     padding: 50px;
     
 }
-.tutorial1{
-    text-align: center;
-}
 
-.tutorial2{
-    text-align: center;
-    padding-bottom: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 0px;
-}
 
 .column{
    text-align: center;
@@ -116,10 +100,5 @@ pre{
     padding-bottom: 50px;
 }
 
-.foot{
-    padding-bottom: 50px
-}
 
-
-/* css for z_motor.html*/
 

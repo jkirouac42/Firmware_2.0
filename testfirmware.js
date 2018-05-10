@@ -47,7 +47,6 @@
 function step1(){
     
     document.getElementById("1").style.display="block";
-    
 }
 
 
@@ -97,76 +96,15 @@ function move(direction){
 
 
 
-
-
-
 //Select Z motor
 
 function step1(){
     
     document.getElementById("1").style.display="block";
-    window.scrollTo(0, document.body.scrollHeight);
+    document.getElementById("buttons").style.display="inline-block";
  
 }
-/*
 
-//Select power supply
-
-
-
-function step2(){
-    
-    document.getElementById("zMotor").style.display="none";
-    document.getElementById("pSupply").style.display="block";
-}
-
-function step2b(){
-    
-    document.getElementById("zMotor").style.display="block";
-    document.getElementById("pSupply").style.display="none";
-}
-
-function step3(){
-    
-    document.getElementById("zEndstop").style.display="block";
-    document.getElementById("pSupply").style.display="none";
-}
-
-function step3b(){
-    document.getElementById("pSupply").style.display="block";
-    document.getElementById("zEndstop").style.display="none";
-    
-}
-
-function step4(){
-    
-        document.getElementById("Hotend").style.display="block";
-        document.getElementById("zEndstop").style.display="none";
-       
-}
-
-function step4b(){
-    
-    document.getElementById("zEndstop").style.display="block";
-    document.getElementById("Hotend").style.display="none";   
-    
-}
-
-function step5(){
-    
-    document.getElementById("LCD").style.display="block";
-    document.getElementById("Hotend").style.display="none";
-      
-}
-
-function step5b(){
-    
-    document.getElementById("LCD").style.display="none";
-    document.getElementById("Hotend").style.display="block";
-    
-}
-
-*/
 //variables for matchconfig()        
                  
          //24v Black Z motor (Rev c and D)
