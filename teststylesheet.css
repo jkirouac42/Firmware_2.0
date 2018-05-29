@@ -99,7 +99,6 @@ pre{
 }
 
 
-
 .hepics{
     padding-top: 15px;
 }
@@ -109,5 +108,11 @@ pre{
     padding-bottom: 50px;
 }
 
+.backArrow{
+   float: right;
+}
 
+.nextArrow{
+   float: left;
+}
 
