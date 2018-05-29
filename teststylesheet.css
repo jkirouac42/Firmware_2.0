@@ -26,6 +26,15 @@ h5{
 
 h5:hover{
     color: #FF6300;
+    
+}
+
+span{}
+
+span:hover{
+    
+     color: #FF6300;
+    
 }
 
 pre{

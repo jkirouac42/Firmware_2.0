@@ -47,6 +47,7 @@
 function step1(){
     
     document.getElementById("1").style.display="block";
+    document.getElementById("buttons").style.display="inline-block";
 }
 
 
